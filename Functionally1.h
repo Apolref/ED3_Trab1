@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include "DefaultPrints.h"
 #include "funcoesFornecidas.h"
+#include "LuigiBiblioteca.h"
 
 void functionality_1(char* file);
 

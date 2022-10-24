@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include "DefaultPrints.h"
 #include "funcoesFornecidas.h"
+#include "AlexandreBiblioteca.h"
 
 void functionality_5(char* file);
 

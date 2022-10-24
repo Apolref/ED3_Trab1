@@ -34,5 +34,14 @@ funcoesFornecidas.o : funcoesFornecidas.c
 DefaultPrints.o : DefaultPrints.c DefaultPrints.h
 	gcc -o DefaultPrints.o -c DefaultPrints.c
 
-exec : main.o Functionally1.o Functionally2.o Functionally3.o Functionally4.o Functionally5.o Functionally6.o funcoesFornecidas.o DefaultPrints.o
-	gcc -o exec main.o Functionally1.o Functionally2.o Functionally3.o Functionally4.o Functionally5.o Functionally6.o funcoesFornecidas.o DefaultPrints.o
+FernandoBiblioteca.o : FernandoBiblioteca.c FernandoBiblioteca.h
+	gcc -o FernandoBiblioteca.o -c FernandoBiblioteca.c
+
+LuigiBiblioteca.o : LuigiBiblioteca.c LuigiBiblioteca.h
+	gcc -o LuigiBiblioteca.o -c LuigiBiblioteca.c
+
+AlexandreBiblioteca.o : AlexandreBiblioteca.c AlexandreBiblioteca.h
+	gcc -o AlexandreBiblioteca.o -c AlexandreBiblioteca.c
+
+exec : main.o Functionally1.o Functionally2.o Functionally3.o Functionally4.o Functionally5.o Functionally6.o funcoesFornecidas.o DefaultPrints.o FernandoBiblioteca.o LuigiBiblioteca.o AlexandreBiblioteca.o
+	gcc -o exec main.o Functionally1.o Functionally2.o Functionally3.o Functionally4.o Functionally5.o Functionally6.o funcoesFornecidas.o DefaultPrints.o FernandoBiblioteca.o LuigiBiblioteca.o AlexandreBiblioteca.o
